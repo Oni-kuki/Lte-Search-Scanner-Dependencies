@@ -14,7 +14,7 @@ chmod 744 LteScanner-script.sh
 
 -DUSE_HACKRF=1    -- build for HackRF
 
--DUSE_OPENCL=0    -- disable OpenCL (See notes in later chapter)
+-DUSE_OPENCL=0    -- disable OpenCL 
 
 
 # Cell search exemple:
