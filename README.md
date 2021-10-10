@@ -11,7 +11,9 @@ chmod 744 LteScanner-script.sh
 # Hardware uses:
 
 -DUSE_BLADERF=1   -- build for BladeRF
+
 -DUSE_HACKRF=1    -- build for HackRF
+
 -DUSE_OPENCL=0    -- disable OpenCL (See notes in later chapter)
 
 
