@@ -20,7 +20,8 @@ chmod 744 LteScanner-script.sh
 # Cell search exemple:
 
 ./src/CellSearch --freq-start 1890000000
-
+./src/CellSearch --freq-start 900000000 --freq-end 1800000000
+beetween 900mhz and 1800mhz(1,8ghz)
 # Lte tracker exemple:
 
 ./src/LTE-Tracker -f 1890000000
