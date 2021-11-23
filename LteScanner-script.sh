@@ -7,4 +7,12 @@ if [ -d /home/git-sources ];then
 else    
         mkdir /home/git-sources 
 fi
-cd /home/git-sources && git clone https://github.com/JiaoXianjun/LTE-Cell-Scanner && cd /home/git-sources/LTE-Cell-Scanner && mkdir build && cd build && cmake ../ -DUSE_HACKRF=1 && make
+cd /home/git-sources && git clone https://github.com/JiaoXianjun/LTE-Cell-Scanner && cd /home/git-sources/LTE-Cell-Scanner 
+
+
+if [ -d /home/git-sources/LTE-Cell-Scanner/build ];then
+        echo "the directory exist"
+else    
+        mkdir /home/git-sources/LTE-Cell-Scanner/build
+fi
+cd /home/git-sources/LTE-Cell-Scanner/build && cmake ../ -DUSE_HACKRF=1 && make
